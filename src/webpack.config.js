@@ -20,6 +20,16 @@ module.exports = {
 				}
 			},
 			{
+				test: /\.(woff|woff2|ttf|eot|otf)$/,
+				use: {
+					loader: 'file-loader',
+					options: {
+						name: 'font/[name].[ext]',
+						publicPath: '/dist/'
+					}
+				}
+			},
+			{
 				test: /\.css$/,
 				use: ExtractTextPlugin.extract({
 					fallback: 'style-loader',

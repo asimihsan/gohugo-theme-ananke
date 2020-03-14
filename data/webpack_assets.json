@@ -1,6 +1,9 @@
 {
   "app": {
     "js": "js/app.3fc0f988d21662902933.js",
-    "css": "css/app.1cb140d8ba31d5b2f1114537dd04802a.css"
+    "css": "css/app.7864132e4bcc7c3658aa13d0c94e4773.css"
+  },
+  "": {
+    "otf": "font/Concourse T3 Regular.otf"
   }
 }
