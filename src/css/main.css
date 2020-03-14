@@ -4,12 +4,32 @@
 @import '_social-icons';
 @import '_styles';
 
-/* latin */
 @font-face {
     font-family: 'Concourse';
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     src: url('../font/Concourse T3 Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Concourse';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/Concourse T3 Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Concourse';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../font/Concourse T3 Italic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Concourse';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../font/Concourse T3 Bold Italic.otf') format("opentype");
 }
 
 .sans-serif {

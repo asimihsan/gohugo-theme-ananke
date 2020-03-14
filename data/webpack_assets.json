@@ -1,9 +1,14 @@
 {
   "app": {
     "js": "js/app.3fc0f988d21662902933.js",
-    "css": "css/app.7864132e4bcc7c3658aa13d0c94e4773.css"
+    "css": "css/app.ad2cd8448284440b13fb2ea4c16d365c.css"
   },
   "": {
-    "otf": "font/Concourse T3 Regular.otf"
+    "otf": [
+      "font/Concourse T3 Bold Italic.otf",
+      "font/Concourse T3 Bold.otf",
+      "font/Concourse T3 Italic.otf",
+      "font/Concourse T3 Regular.otf"
+    ]
   }
 }
