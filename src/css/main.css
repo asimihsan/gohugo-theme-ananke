@@ -37,3 +37,9 @@
                  'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
                  sans-serif;
   }
+
+.nested-copy-line-height p,
+.nested-copy-line-height ul,
+.nested-copy-line-height ol {
+  line-height: 1.3;
+}
