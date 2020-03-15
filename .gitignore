@@ -1,4 +1,4 @@
-# OS
+
 .DS_Store
 Thumbs.db
 
@@ -28,5 +28,3 @@ npm-debug.log
 
 /junit.xml
 partials/structure/stylesheet.html
-static/dist
-data/webpack_assets.json
