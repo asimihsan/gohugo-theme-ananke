@@ -5,7 +5,7 @@
 
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
-<article class="flex-l flex-wrap justify-between mw8 center ph3">
+<article class="flex-l flex-wrap justify-between mw8 center ph3-l ph4-m ph4">
   <header class="mt4 w-100">
     <aside class="instapaper_ignoref b helvetica tracked">
       {{/*
@@ -29,7 +29,7 @@
     </p>
     {{ end }}
     {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
-    <time class="f6 mv4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    <time class="f6 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
       {{- .Date.Format "January 2, 2006" -}}
     </time>
 
@@ -40,14 +40,27 @@
           3) A page front matter value is set `show_reading_time = true`
         */}}
     {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
-    <span class="f6 mv4 dib tracked"> - {{ .ReadingTime}} minutes read</span>
-    <span class="f6 mv4 dib tracked"> - {{ .WordCount}} words</span>
+    <span class="f6 dib tracked"> - {{ .ReadingTime}} minutes read</span>
+    <span class="f6 dib tracked"> - {{ .WordCount}} words</span>
     {{ end }}
   </header>
   <div
     class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray pr4-l w-80-l">
+
+    <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+      <h2 class="summary">Summary</h2>
+      <div class="f4 summary-body">
+        {{ .Summary }}
+      </div>
+    </div>
+
+    <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+      {{ .TableOfContents }}
+    </div>
+
     {{- .Content -}}
     {{- partial "tags.html" . -}}
+    {{ if (.Site.DisqusShortname) or (.Site.Params.commentoEnable) }}
     <div class="mt6 instapaper_ignoref">
       {{ if .Site.DisqusShortname }}
       {{ template "_internal/disqus.html" . }}
@@ -56,6 +69,7 @@
       {{- partial "commento.html" . -}}
       {{ end }}
     </div>
+    {{ end }}
   </div>
 
   <aside class="w-30-l mt6-l">

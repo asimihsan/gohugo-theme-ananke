@@ -36,6 +36,7 @@
     font-family: 'Concourse', -apple-system, BlinkMacSystemFont,'avenir next', avenir,
                  'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
                  sans-serif;
+    text-rendering: optimizeLegibility;
   }
 
 .nested-copy-line-height p,
@@ -43,3 +44,19 @@
 .nested-copy-line-height ol {
   line-height: 1.3;
 }
+
+h2 .summary {
+    margin-bottom: 1.0rem;
+}
+
+article h2 {
+    margin-bottom: -1.0rem;
+}
+
+.summary-body p {
+    font-style: italic;
+}
+
+.katex {
+    font-size: 1em !important;
+} 
