@@ -3,41 +3,20 @@
 @import '_hugo-internal-templates';
 @import '_social-icons';
 @import '_styles';
-
-@font-face {
-    font-family: 'Concourse';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../font/Concourse T3 Regular.otf') format("opentype");
-}
-
-@font-face {
-    font-family: 'Concourse';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../font/Concourse T3 Bold.otf') format("opentype");
-}
-
-@font-face {
-    font-family: 'Concourse';
-    font-style: italic;
-    font-weight: 400;
-    src: url('../font/Concourse T3 Italic.otf') format("opentype");
-}
-
-@font-face {
-    font-family: 'Concourse';
-    font-style: italic;
-    font-weight: 700;
-    src: url('../font/Concourse T3 Bold Italic.otf') format("opentype");
-}
+@import '_fira_mono_font';
+@import '_fira_sans_font';
 
 .sans-serif {
-    font-family: 'Concourse', -apple-system, BlinkMacSystemFont,'avenir next', avenir,
+    font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont,'avenir next', avenir,
                  'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
                  sans-serif;
     text-rendering: optimizeLegibility;
   }
+
+code, .code {
+    font-family: 'Fira Mono', monospace;
+    text-rendering: optimizeLegibility;
+}
 
 .nested-copy-line-height p,
 .nested-copy-line-height ul,
@@ -59,4 +38,16 @@ article h2 {
 
 .katex {
     font-size: 1em !important;
-} 
+}
+
+.f2, .f2-l, .f2-m, .f2-ns {
+    font-size: 2.0rem; /*default is 2.25*/
+}
+
+.f4, .f4-l, .f4-m, .f4-ns {
+    font-size: 1.1rem; /*default is 1.25*/
+}
+
+.bg-near-white {
+    background-color:#fcfcfc;
+}

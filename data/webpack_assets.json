@@ -1,14 +1,48 @@
 {
   "app": {
     "js": "js/app.3fc0f988d21662902933.js",
-    "css": "css/app.e55fb6305decdc6dc2b69d93f1079b1d.css"
+    "css": "css/app.78dfe3e1f4b8bd228db5deaa031bd529.css"
   },
   "": {
-    "otf": [
-      "font/Concourse T3 Bold Italic.otf",
-      "font/Concourse T3 Bold.otf",
-      "font/Concourse T3 Italic.otf",
-      "font/Concourse T3 Regular.otf"
+    "eot": [
+      "font/fira-mono-bold-italic-subset.eot",
+      "font/fira-mono-bold-subset.eot",
+      "font/fira-mono-regular-italic-subset.eot",
+      "font/fira-mono-regular-subset.eot",
+      "font/firasans-bold-subset.eot",
+      "font/firasans-bolditalic-subset.eot",
+      "font/firasans-italic-subset.eot",
+      "font/firasans-regular-subset.eot"
+    ],
+    "ttf": [
+      "font/fira-mono-bold-italic-subset.ttf",
+      "font/fira-mono-bold-subset.ttf",
+      "font/fira-mono-regular-italic-subset.ttf",
+      "font/fira-mono-regular-subset.ttf",
+      "font/firasans-bold-subset.ttf",
+      "font/firasans-bolditalic-subset.ttf",
+      "font/firasans-italic-subset.ttf",
+      "font/firasans-regular-subset.ttf"
+    ],
+    "woff": [
+      "font/fira-mono-bold-italic-subset.woff",
+      "font/fira-mono-bold-subset.woff",
+      "font/fira-mono-regular-italic-subset.woff",
+      "font/fira-mono-regular-subset.woff",
+      "font/firasans-bold-subset.woff",
+      "font/firasans-bolditalic-subset.woff",
+      "font/firasans-italic-subset.woff",
+      "font/firasans-regular-subset.woff"
+    ],
+    "woff2": [
+      "font/fira-mono-bold-italic-subset.woff2",
+      "font/fira-mono-bold-subset.woff2",
+      "font/fira-mono-regular-italic-subset.woff2",
+      "font/fira-mono-regular-subset.woff2",
+      "font/firasans-bold-subset.woff2",
+      "font/firasans-bolditalic-subset.woff2",
+      "font/firasans-italic-subset.woff2",
+      "font/firasans-regular-subset.woff2"
     ]
   }
 }

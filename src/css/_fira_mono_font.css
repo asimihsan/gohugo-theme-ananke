@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/fira-mono-regular-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/fira-mono-regular-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/fira-mono-regular-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/fira-mono-regular-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/fira-mono-regular-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/fira-mono-bold-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/fira-mono-bold-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/fira-mono-bold-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/fira-mono-bold-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/fira-mono-bold-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../font/fira-mono-regular-italic-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/fira-mono-regular-italic-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/fira-mono-regular-italic-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/fira-mono-regular-italic-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/fira-mono-regular-italic-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../font/fira-mono-bold-italic-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/fira-mono-bold-italic-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/fira-mono-bold-italic-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/fira-mono-bold-italic-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/fira-mono-bold-italic-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}

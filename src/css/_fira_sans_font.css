@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/firasans-regular-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/firasans-regular-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/firasans-regular-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/firasans-regular-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/firasans-regular-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/firasans-bold-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/firasans-bold-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/firasans-bold-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/firasans-bold-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/firasans-bold-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../font/firasans-italic-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/firasans-italic-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/firasans-italic-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/firasans-italic-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/firasans-italic-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../font/firasans-bolditalic-subset.eot'); /* IE9 Compat Modes */
+    src: url('../font/firasans-bolditalic-subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/firasans-bolditalic-subset.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/firasans-bolditalic-subset.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/firasans-bolditalic-subset.ttf')  format('truetype'); /* Safari, Android, iOS */
+}

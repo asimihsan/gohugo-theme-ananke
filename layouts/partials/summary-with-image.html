@@ -13,10 +13,13 @@
       {{ end }}
       <div class="blah w-100{{ if .Params.featured_image }} w-60-ns pl3-ns{{ end }}">
         <h1 class="f3 fw1 sans-serif mt0 lh-title">
-          <a href="{{.Permalink}}" class="color-inherit dim link">
+          <a href="{{.Permalink}}" class="dim">
             {{ .Title }}
           </a>
         </h1>
+        <div class="f6">
+          {{ .Date.Format "January 2, 2006" }}
+        </div>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           {{ .Summary }}
         </div>

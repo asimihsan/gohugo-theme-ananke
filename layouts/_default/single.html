@@ -5,7 +5,7 @@
 
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
-<article class="flex-l flex-wrap justify-between mw8 center ph3-l ph4-m ph4">
+<div class="flex-l flex-wrap justify-between mw8 center ph3-l ph4-m ph4">
   <header class="mt4 w-100">
     <aside class="instapaper_ignoref b helvetica tracked">
       {{/*
@@ -14,7 +14,7 @@
           */}}
       {{with .CurrentSection.Title }}{{. | upper }}{{end}}
     </aside>
-    <h1 class="f1 sans-serif mt3 mb1">
+    <h1 class="f2-l f2-m f3-ns sans-serif mt3 mb1">
       {{- .Title -}}
     </h1>
     {{ with .Params.author }}
@@ -45,20 +45,25 @@
     {{ end }}
   </header>
   <div
-    class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray pr4-l w-80-l">
+    class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4-l f4-m f4-ns nested-links nested-img mid-gray pr4-l w-80-l">
 
-    <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-      <h2 class="summary">Summary</h2>
-      <div class="f4 summary-body">
-        {{ .Summary }}
+    <section>
+      <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+        <h2 class="summary">Summary</h2>
+        <div class="f4-l f4-m f4-ns summary-body">
+          {{ .Summary }}
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <div class="bg-light-gray pa3 nested-copy-line-height nested-links">
       {{ .TableOfContents }}
     </div>
 
-    {{- .Content -}}
+    <article>
+      {{- .Content -}}
+    </article>
+
     {{- partial "tags.html" . -}}
     {{ if (.Site.DisqusShortname) or (.Site.Params.commentoEnable) }}
     <div class="mt6 instapaper_ignoref">
@@ -76,5 +81,5 @@
     {{- partial "menu-contextual.html" . -}}
   </aside>
 
-</article>
+</div>
 {{ end }}

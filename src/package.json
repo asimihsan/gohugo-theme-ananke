@@ -7,7 +7,7 @@
   "author": "budparr",
   "license": "MIT",
   "scripts": {
-    "build:production": "rm -rf ../static/dist && webpack -p",
+    "build:production": "rm -rf ../static/dist && rsync -a katex@0.11.1 ../static/dist && webpack -p",
     "build": "webpack --progress --colors --watch",
     "start": "npm run build"
   },

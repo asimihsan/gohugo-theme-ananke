@@ -10,8 +10,9 @@ pre  code {
   padding: 1.5em 1.5em;
   white-space: pre;
   font-size: .875rem;
-  line-height: 2;
-
+  /*line-height: 2;*/
+  font-family: 'Fira Mono', monospace;
+  text-rendering: optimizeLegibility;
 }
 
 pre {
