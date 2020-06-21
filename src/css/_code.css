@@ -1,18 +1,24 @@
+/*
 pre, .pre  {
   overflow-x: auto;
   overflow-y: hidden;
   overflow:   scroll;
 }
+*/
 
 
-pre  code {
+pre code {
   display: block;
-  padding: 1.5em 1.5em;
+  padding: 1em;
   white-space: pre;
   font-size: .875rem;
   /*line-height: 2;*/
   font-family: 'Fira Mono', monospace;
   text-rendering: optimizeLegibility;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #b0b0b0;
+  white-space: pre-wrap;
 }
 
 pre {
