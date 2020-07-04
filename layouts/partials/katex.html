@@ -1,21 +1,4 @@
 <link rel="stylesheet" href="/dist/katex@0.11.1/katex.min.css">
 <script defer src="/dist/katex@0.11.1/katex.min.js"></script>
-
-<script>
-    function enableKatex() {
-        renderMathInElement(
-            document.body,
-            {
-                delimiters: [
-                    { left: "$$", right: "$$", display: true },
-                    { left: "\\[", right: "\\]", display: true },
-                    { left: "$", right: "$", display: false },
-                    { left: "\\(", right: "\\)", display: false }
-                ]
-            }
-        );
-    }
-
-</script>
-
-<script defer src="/dist/katex@0.11.1/contrib/auto-render.min.js" onload="enableKatex();"></script>
+<script defer src="/dist/katex@0.11.1/contrib/auto-render.min.js"></script>
+<script defer src="/js/enable_katex.js"></script>

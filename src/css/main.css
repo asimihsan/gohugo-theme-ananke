@@ -64,3 +64,18 @@ header h1 {
     color: #357edd;
     transition: color .15s ease-in;
 }
+
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+
+.formkit-form {
+    width: 100% !important;
+}
+
+@media (--breakpoint-not-small) {
+    .formkit-form {
+        width: 50% !important;
+    }
+}
+

@@ -7,7 +7,7 @@
   "author": "budparr",
   "license": "MIT",
   "scripts": {
-    "build:production": "rm -rf ../static/dist && rsync -a katex@0.11.1 ../static/dist && webpack -p",
+    "build:production": "rm -rf ../static/dist && mkdir -p ../static/dist/mathjax && rsync -a node_modules/mathjax/es5/ ../static/dist/mathjax && webpack -p",
     "build": "webpack --progress --colors --watch",
     "start": "npm run build"
   },
@@ -20,6 +20,7 @@
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
+    "mathjax": "^3.0.5",
     "postcss": "^5.2.16",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",

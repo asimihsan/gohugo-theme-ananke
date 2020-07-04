@@ -3,6 +3,10 @@
 {{ partial "page-header.html" . }}
 {{ end }}
 
+{{ define "newsletter_signup" }}
+<script defer src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+{{ end }}
+
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="flex-l flex-wrap justify-between mw8 center ph3-l ph4-m ph4">
@@ -64,12 +68,13 @@
       {{- .Content -}}
     </article>
 
+    <center>
+      {{ partial "newsletter-signup.html" . }}
+    </center>
+
     {{- partial "tags.html" . -}}
-    {{ if (.Site.DisqusShortname) or (.Site.Params.commentoEnable) }}
+    {{ if (.Site.Params.commentoEnable) }}
     <div class="mt6 instapaper_ignoref">
-      {{ if .Site.DisqusShortname }}
-      {{ template "_internal/disqus.html" . }}
-      {{ end }}
       {{ if .Site.Params.commentoEnable }}
       {{- partial "commento.html" . -}}
       {{ end }}
