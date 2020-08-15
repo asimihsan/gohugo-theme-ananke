@@ -79,3 +79,16 @@ header h1 {
     }
 }
 
+figure img {
+    max-width: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption h4 {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
